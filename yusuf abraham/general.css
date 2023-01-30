@@ -1,0 +1,17 @@
+body{	color:#000;
+		background-image:url(https://images.wallpaperscraft.com/image/single/nissan_gtr_nissan_sportscar_139668_6982x3840.jpg);
+		text-align:center;
+		width:1200px;
+		height:800px;
+		font-size:25px;
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position : cursor;};
+
+header{color:red;
+		outline: 4px solid #f0f0f0;};
+header:hover{color:darkblue;}
+
+ul{text-align:left;}
+footer{text-align:left;}
+	p{outline: 4px solid #f0f0f0;}
