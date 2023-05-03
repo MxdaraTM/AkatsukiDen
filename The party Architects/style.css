@@ -1,0 +1,100 @@
+/* Reset Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #e60073;
+}
+
+button,
+input[type="submit"] {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: none;
+  background-color: #e60073;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #c4005b;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #e60073;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #f7f7f7;
+}
+
+/* Main Styles */
+
+main {
+  padding: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #e60073;
+}
+
+p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
