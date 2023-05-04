@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza Website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="spotify-dark-theme">
+
+	<header>
+		<h1>Welcome to Pizza Place</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#menu">Our Menu</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="about">
+			<h2>About Us</h2>
+			<p>We are a pizza restaurant dedicated to providing the best pizza experience to our customers. Our pizzas are made with fresh ingredients and cooked to perfection in a wood-fired oven. Come and taste the difference!</p>
+		</section>
+
+		<section id="menu">
+			<h2>Our Menu</h2>
+			<ul>
+				<li>
+					<h3>Cheese Pizza</h3>
+					<p>A classic pizza topped with mozzarella cheese.</p>
+					<button>Order Now</button>
+				</li>
+				<li>
+					<h3>Hawaiian Pizza</h3>
+					<p>A delicious pizza topped with ham, pineapple, and mozzarella cheese.</p>
+					<button>Order Now</button>
+				</li>
+				<li>
+					<h3>Pepperoni Pizza</h3>
+					<p>A crowd-pleasing pizza topped with pepperoni and mozzarella cheese.</p>
+					<button>Order Now</button>
+				</li>
+			</ul>
+		</section>
+
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<button type="submit">Send Message</button>
+			</form>
+		</section>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Pizza</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody id="myPizzaList">
+			<tr>
+				<td></td>	
+				<td></td>	
+			<tr>
+		</tbody>
+	</table>
+
+	</main>
+
+	<footer>
+		<p>Copyright © Pizza Place</p>
+	</footer>
+	<script src="./main.js"></script>
+</body>
+</html>

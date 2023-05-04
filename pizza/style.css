@@ -1,0 +1,159 @@
+/* Spotify Green */
+.spotify-theme {
+  --bg-color: #1DB954;
+  --text-color: #FFFFFF;
+  --btn-bg-color: #FFFFFF;
+  --btn-text-color: #1DB954;
+}
+
+/* Spotify Dark */
+.spotify-dark-theme {
+  --bg-color: #191414;
+  --text-color: #FFFFFF;
+  --btn-bg-color: #FFFFFF;
+  --btn-text-color: #191414;
+}
+
+/* General styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--btn-bg-color);
+  background-color: var(--text-color);
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+li h3 {
+  margin-top: 0;
+}
+
+li p {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: var(--btn-bg-color);
+  border: none;
+  color: var(--btn-text-color);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--text-color);
+  color: var(--btn-bg-color);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+textarea {
+  height: 150px;
+}
+
+[type="submit"] {
+  background-color: var(--btn-bg-color);
+  border: none;
+  color: var(--btn-text-color);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+[type="submit"]:hover {
+  background-color: var(--text-color);
+  color: var(--btn-bg-color);
+}table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #2944f2;
+}
+
+tr:nth-child(even) {
+  background-color: #2991f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
