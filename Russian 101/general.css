@@ -6,7 +6,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #191414;
+  background-color: #121212;
+  color: #FFFFFF;
 }
 
 .container {
@@ -43,7 +44,6 @@ body {
 }
 
 .content {
-  color: #FFFFFF;
   text-align: center;
 }
 
