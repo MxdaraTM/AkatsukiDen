@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Order Dango - Dango Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Order Dango</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form id="dango-order">
+                <label for="flavor">Select Flavor:</label>
+                <select id="flavor" name="flavor" required>
+                    <option value="">-- Select Flavor --</option>
+                    <option value="Matcha">Matcha</option>
+                    <option value="Strawberry">Strawberry</option>
+                    <option value="Mango">Mango</option>
+                    <!-- Add more flavor options if needed -->
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="delivery-address">Delivery Address:</label>
+                <textarea id="delivery-address" name="delivery-address" required></textarea>
+
+                <button type="submit" class="btn">Place Order</button>
+            </form>
+        </section>
+	<img src="https://i.pinimg.com/originals/cf/8b/05/cf8b0582a57233cddc2d534f3e2916f3.gif">
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Dango Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

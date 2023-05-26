@@ -1,0 +1,128 @@
+/* Add your custom styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+}
+
+#hero {
+    background-image: url('path-to-your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#featured-products {
+    margin-top: 50px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* Add more custom styles as needed */
+body {
+  background-color: #36393f;
+  color: #fff;
+}
+
+/* Update the background and text color of specific elements */
+header, footer {
+  background-color: #202225;
+  color: #fff;
+}
+
+/* Example styles for a chat message */
+.message {
+  background-color: #2f3136;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Example style for links */
+a {
+  color: #b9bbbe;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Example style for buttons */
+.button {
+  background-color: #7289da;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #677bc4;
+}
+
+/* Example style for input fields */
+input[type="text"], input[type="password"] {
+  background-color: #40444b;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Example style for a dropdown/select element */
+select {
+  background-color: #40444b;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
