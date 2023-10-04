@@ -1,0 +1,24 @@
+body{
+	background-color: gray
+}
+
+img{
+	filter: grayscale(100%)
+}
+
+img:hover{
+	filter: none;
+}
+
+.container {
+  width: 800px;
+  height: 1400px;
+  background-image: url(A1nqnb7kKXL._SX540_._AGmerlin_._FMwebp_.png);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: clip-path 0.3s ease;
+
+}
+
+.container:hover{
+	clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
+}
