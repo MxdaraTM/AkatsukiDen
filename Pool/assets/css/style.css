@@ -1,0 +1,26 @@
+body{
+	background-size : cover;
+	margin : 0px;
+	
+}
+
+img{
+	filter : grayscale(100%);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+img:hover{
+	filter: none
+}
+#myCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none; /* This prevents interactions with the canvas element */
+}
