@@ -1,0 +1,54 @@
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    clip-path: circle(50px at 0 0);
+    transition: all 2s ease;
+}
+
+.container:hover {
+    clip-path: circle(100px);
+}
+
+body {
+    background-color: rgb(22, 13, 13);
+    color: rgb(9, 133, 50);
+    margin: 50px;
+}
+
+.newspaper-article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 48%;
+    /* Adjust this value to control the width of each column */
+    padding: 10px;
+    background-color: #f5f5f5;
+    /* Background color for the columns */
+    margin: 5px;
+}
+
+
+/*ANTISCROLLS*/
+
+/* Hide the vertical scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+/* Hide the horizontal scrollbar */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* Allow scrolling using the mouse wheel or touch gestures */
+body {
+    overflow: overlay;
+}
+
+#myCanvas {
+    filter: blur(5000px); /* Adjust the blur radius as needed */
+}
