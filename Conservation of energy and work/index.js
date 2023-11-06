@@ -4,7 +4,7 @@ canvas.width = 1920
 canvas.height = 1080
 
 c = canvas.getContext('2d')
-shapes = []
+let shapes = []
 
 shapeTypes = ['circ'] //['squa', 'circ', 'rect']
 maxSize = 16
@@ -46,7 +46,7 @@ function spawnShapes(num) {
                 type: shapeTypes[thisshape],
                 position: {
                     x: Math.floor(canvas.width * Math.random()),
-                    y: Math.floor(canvas.height * Math.random())
+                    y: -500+Math.floor(canvas.height * Math.random())
                 },
                 width: size,
                 height: Math.floor(size * Math.random()),
@@ -56,7 +56,7 @@ function spawnShapes(num) {
             }))
     }
 }
-maxShapes = 0
+maxShapes = 2000
 function animate() {
     if (maxSize === 30) {
         add = false
@@ -66,7 +66,8 @@ function animate() {
     }
     if (add) { maxSize++ } else { maxSize-- }
     window.requestAnimationFrame(animate)
-    //drawRect(0, 0, canvas.width, canvas.height)
+    c.clearRect(0, 0, canvas.width, canvas.height)
+    //drawRect(0, 0, canvas.width, canvas.height,'rgba:0,0,0,0.1')
     //DRAW MOUSE ARC if (drawMouseArc){drawArc(mouseArc.position.x,mouseArc.position.y,mouseArc.color,mouseArc.radius)}
 
     size = Math.floor(maxSize * Math.random())
@@ -92,6 +93,7 @@ function animate() {
 animate()
 
 window.addEventListener('keydown', (event) => {
+    if (event.code==='keyG'){console.log('clean up shapes')}
     shapes.forEach(shape => {
         shape.movement(true, event.code)
     });
@@ -122,6 +124,10 @@ window.addEventListener('mousemove', (event) => {
 
 
 window.addEventListener('keydown', (event) => {
+    if (event.code === 'KeyG') { 
+        shapes = []}
+    if (event.key === 'Enter'){onYouTubeIframeAPIReady() } 
+
     if (event.key === 'ArrowUp'){
         maxShapes++} else if (event.key === 'ArrowDown'){ 
             maxShapes--}
@@ -151,7 +157,7 @@ window.addEventListener('mousedown', (event) => {
     drawMouseArc = true
     shapes.forEach(shape => {
         if (circlesCollide(shape, mouseArc)) {
-            console.log(`${shape.color} is colliding with mouse`)
+            //console.log(`${shape.color} is colliding with mouse`)
             shape.color = switchColors()
         }
     });
@@ -162,5 +168,4 @@ window.addEventListener('mousedown', (event) => {
 window.addEventListener('mouseup', (event) => {
     drawMouseArc = false
 });
-
 
