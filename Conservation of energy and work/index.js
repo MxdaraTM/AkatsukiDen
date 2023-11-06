@@ -12,10 +12,10 @@ add = true
 
 themes = [
     g = { r: 9, g: 133, b: 50 },
-    b = { r: 50, g: 9, b: 133 },
-    r = { r: 133, g: 50, b: 9 },
+    b = { r: 50, g: 9, b: 255 },
+    r = { r: 255, g: 0, b: 0 },
     y = { r: 9, g: 255, b: 255, random: 1 },
-    y = { r: 255, g: 255, b: 9, random: 3 }
+    y = { r: 255, g: 255, b: 9, random: 3 },
 ]
 
 theme = themes[Math.floor(Math.random() * themes.length)]
@@ -169,3 +169,7 @@ window.addEventListener('mouseup', (event) => {
     drawMouseArc = false
 });
 
+function changeGravity(newValue){
+    console.log("you have clicked button")
+ gravity = newValue
+}

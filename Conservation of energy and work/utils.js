@@ -11,7 +11,7 @@ function drawRect(x, y, w, h, col = 'black') {
     c.fillStyle = col
     c.fillRect(x, y, w, h)
 }
-const gravity = 0.7
+let gravity = 0.1
 
 function areCirclesColliding(circle1, circle2) {
     if (circle1 != undefined) return

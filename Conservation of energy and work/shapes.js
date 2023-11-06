@@ -72,27 +72,19 @@ class shape {
         if (pressed) {
             switch (key) {
                 case this.config.mUp:
-                    this.velocity.y = -15
+                    this.velocity.y += -15
                     break
                 case this.config.mDown:
-                    this.velocity.y = 5
+                    this.velocity.y += 5
                     break
                 case this.config.mLeft:
-                    this.velocity.x = -5
+                    this.velocity.x += -5
                     break
                 case this.config.mRight:
-                    this.velocity.x = 5
+                    this.velocity.x += 5
                     break
         }
         } else {
-            switch (key) {
-                case this.config.mLeft:
-                    this.velocity.x = 0
-                    break
-                case this.config.mRight:
-                    this.velocity.x = 0
-                    break
-                }
         }
     }
     track(object){ //eg track the mouse, with mouse.x, mouse.y
@@ -109,6 +101,8 @@ class shape {
         this.draw()
         this.position.x += this.velocity.x
         this.position.y += this.velocity.y
+        if (this.velocity.x>0){this.velocity.x-=0.04}
+        if (this.velocity.x<0){this.velocity.x+=0.04}
         this.applyGravity()
     }
     applyGravity() {

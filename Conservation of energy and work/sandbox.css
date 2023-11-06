@@ -41,3 +41,27 @@ img:hover{
     left: 0;
     z-index: 1; /* Ensure the canvas is on top of the video */
 }
+
+
+
+
+.menu-button {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background-color: #fff; /* Set the background color to white */
+    color: #000; /* Set the text color to black */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    filter: grayscale(100%); /* Apply a grayscale filter to make the buttons black and white */
+  }
+
+  .menu-button:hover {
+    filter: none;
+    background-color: #000; /* Change the background color to black on hover */
+    color: #fff; /* Change the text color to white on hover */
+  }
